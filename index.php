@@ -44,11 +44,12 @@ $active="active";
 
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
 
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-9">
+        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-lg-offset-2 col-xs-offset-2">
 			<div id="carousel-example-captions" class="carousel slide" data-ride="carousel"> 
 				<?php
 					$sql_slider=mysqli_query($con,"select * from slider where estado=1 order by orden");
@@ -94,10 +95,10 @@ $active="active";
 
 
 
-  <div class="col-xs-9">
+  <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-lg-offset-2 col-xs-offset-2">
       <form action="consultarInicial.php" method="post">
-          <input type="text" class="form-control" name="codigo">
-          <input type="submit" name="consultar" id="" class="form-control btn btn-primary">
+          <input type="text" class="form-control text-consultar" name="codigo" placeholder="DIGITE EL CODIGO DE BARRAS" >
+          <input type="submit" name="consultar" id="" class="form-control btn btn-primary btn-consultar">
       </form>
   </div>
 
