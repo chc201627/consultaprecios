@@ -1,3 +1,12 @@
+h1{
+    font-size: 500%;
+}
+.carousel-caption{
+    display: none;
+}
+.carousel-indicators{
+    display: none;
+}
 .form-control{
     font-size: 40px;
     height: 66px;
@@ -7,5 +16,9 @@
     display: none;
 }
 .text-consultar{
-    width: 97%;
+    width: 100%;
+}
+.carousel-inner .item img{
+    width: 1000vw;
+    height: 90vh;
 }
